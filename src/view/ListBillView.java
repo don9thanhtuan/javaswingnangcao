@@ -38,7 +38,7 @@ public class ListBillView extends javax.swing.JFrame {
 
     public void showTable() {
         int i = 1;
-        model.setRowCount(0);
+        //model.setRowCount(0);
         for (Bill bill : colist) {
             BookingRoom bookingRoom = new BookingRoom();
             bookingRoom = checkoutDAO.getBooking(bill.getBookingID());
